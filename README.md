@@ -1,3 +1,3 @@
 <ol>
-  <li> [https://hareom284.github.io/Blog/](laravel Introduction) </li>
+  <li> (laravel Introduction)[https://hareom284.github.io/Blog/] </li>
 </ol>
