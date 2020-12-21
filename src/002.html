@@ -16,7 +16,7 @@
     <div class="mcg-article">
         <header class="jumbotron jumbotron-fluid">
             <article class="container">
-                <h1 class="header text-primary text-xs-center p-b-1 m-b-1">Overview and Installation</h1>
+                <h1 class="header text-primary text-xs-center p-b-1 m-b-1">Application Structure</h1>
                 <div class="content-header px-2 ml-2 bd-highlight  ">
                     <img src="https://zawzawwin.me/profile.jpg" alt="profile" width="40px" height="40px"
                         style="border-radius:50%;">
@@ -31,61 +31,45 @@
                 </div>
                 <br>
                 <div class="container">
-                    <img src="https://cdn1.bbcode0.com/uploads/2020/12/19/ac9febea962f5fd872d792207e2205e0-full.jpg" width="100%" class="img-fluid">
+                    <img src="https://i.postimg.cc/FzJr5T6c/app-structure.png" width="100%" class="img-fluid">
                 </div>
+                <!-- <img src="https://i.postimg.cc/Gp9jCYcr/app-structure-1.png" alt=""> -->
                 <div class="content ">
-                    <h3>Laravel ကို သုံး ပြီး web application တည် ဆောက် ရ တွင် အောက် ပါ အ ကျိုး ကျေးဇူး ရ ရှိ နိုင် ပါ
-                        သည်။
-                    </h3>
-                    <ul>
-                        <li>Application ကို design အ တွက် စဉ်း စာ စ ရာ မ လို ပဲ laravel မှာ ပါ ‌သော build in components
-                            ယူ သုံး လို့ ရ ပါ တယ်။
-                        </li>
-                        <li>Laravel သည် namespace and interface သုံး သော ‌ကြောင့် data တွေ့ manage လုပ် ရ တာ အ
-                            ရမ်း လွယ် ကူး သွား ပါ တယ်
-                        </li>
-                        <li>Laravel ကို သုံး ပြီး ရေး ချင်း က files structure က ရှုပ် မ နေ ပဲ application ကို တစ် ချိန်
-                            maintain ပြန် လုပ် ရင် အ ရမ်း လွယ် ကူး သွား ပါ တယ်။
-                        </li>
-                    </ul>
+                    <h3 class="h3">Application Structure in laravel </h3>
+                    <p>Project ကို laravel Framework သုံးး ပြီးး ရေးး ရတွင် ပါဝင်မည့် folder,sub folder,files တွေ့ ကို‌အောက်ပါ screen shot တွင် ဖော်ပြထား ပါ သည်။</p>
+                    <p style="color: red;">Application structure တွင် ‌သိထား ဖို့ လိုတယ် folder ကို (*) and red colour  ဖြစ် ဖော်ပြထား ပါသည်။။</p>
+                    <img src="https://i.postimg.cc/ydpyQCkV/app-structure.png" alt="" width="79%">
                     <hr class="style-19">
 
-                    <h3> Before installation Requirement
-                    </h3>
+                    <h3> Laravel's app directory </h3>
                     <ul>
-                        <li> PHP version က 7.2.5 or ထက် ကျော် ဖို့ လို တယ်</li>
-                        <img src="https://i.ibb.co/7JgFcQL/laravel-version.png" alt="" width="79%">
-                        <li>Composer ကို install လုပ် ထား ဖို့ လို ပါ တယ်။composer ကို install လုပ် မယ် ဆို ကို <a
-                                href="https://getcomposer.org/download/">Download Link</a> သွား ပြီး ကိုယ် သုံး နေ တယ်
-                            OS မူ တည် ၍ installed လုပ် ထားပါ။</li>
-                        <p class="paragraph" style="color: red;">**အ ကယ် ၍ သင် က windows သုံး မယ် ဆို ရင် Composer ကို
-                            Environment Variable Setup လို ဖို သည် <a
-                                href="https://dev.to/jheczg/laravel-7-x-composer-installation-tutorial-windows-cmd-error-fix-may-2020-4gd4"
-                                target="_blank">Link</a>
-                            ကိုclick ပြီး လုပ် လိုက် ပါ။**
-                        </p>
-                        <li>Composer ရှိ လာ မ ရှိ ဘူး လာ check လို ဖို့ ဆို အောက် က အ တိုင် လုပ် ပါ။</li>
-                        <img src="https://i.ibb.co/wBrMJHM/comopser-version.png" alt="" width="79%">
+                       
+                        <li>
+                            
+                            
+                             App directory က project တွင် အ ရမ်းး အ ရေ ပါ သော directory တစ်ခု ဖြစ်ပါ တယ် ။
+                            Project တစ်ခု classes အားးလုံးး နီးး ပါ သည် directory လဲ ဖြစ်သည်။App directory တွင်ပါဝင်သည် folder တွေ့ကိုအောက်ပါ screen shot တွင့် ပြ ထားး ပါ တယ်
+                          
+                        </li>
+                        <img src="https://i.postimg.cc/Qds9LnL1/app-directory.png" alt="" width="79%">
+                        <li><b>Console</b>  ဆို တယ် folder က artisan comment line interface ကို သုံးး လို့ ရ အောင် kernel.phpတွင် built in  ရေးး ထားး ပါ သည်။</li>
+                        <li><b>Exceptions directory </b> က ကိုယ် ရဲ့ project တွင်ပါဝင်မည် errorsဖြစ် သော 404,500စသော errors pages  တွေ့ ကို Handler.php file တွင် ကိုယ် ကို Custom ရေးးလို ရ ပါ တယ်။။ကိုယ် က custom မ ရေး ပဲ ထားးမယ် ဆိုရင် laravel default ဖြစ် errors handlers pages တွေ့ ကို ပြ နေမှာ ပါ။</li>
+                        <li><b>
+                            Http directory</b> က ကိုယ့် ရဲ့ Project တွင်ပါဝင်မည့် <b> Controller </b>
+                            (form နဲ့ ပတ်သတ်သော data(insert,update,delete) စ‌သည့်တို့ကို handle လုပ်သောအခါ), <b>Middleware</b>(Admin and user page ကို access လုပ် လို့ မရ‌အောင် လုပ်သော) ,kernel.php က middleware ကို သုံး တယ် role တွေ့ ခွဲ ရတွင် သုံးသည်။</li>
+                       <li><b>Models </b> folder က တော့ Eloquent ORM(Object- Relational-mapper) ကို သုံးး ထားး ပါ တယ်။၎င်းသည် database tables တွေ့  relationship(one-to-one,one-to-many,etc..) လုပ်ရတွင် ရ တွင် အသုံး ပြု ထားးသည်။Database table တစ်ခု တွင် "Model" တစ်ခု တည်ဆောက်ထား ဖို့ လိုအပ်ပါသည်။</li>
+                       
                     </ul>
                     <hr class="style18">
-                    <h3>Installation</h3>
-                    <p class="paragraph"> Laravel project ကို ကိုယ် ထား ချင် တယ် path ကို သွား ပြီး အောက် ပါ အဘတိုင်
-                        installed လုပ် ပါ။ </p>
-                    <ul style="list-style-type:none;color:red;">
-
-                        <li>==>Step 1</li>
-                        <img src="https://i.ibb.co/k3tqfJH/install1.jpg" alt="" width="79%">
-                        <li>==>Step 2</li>
-                        <img src="https://i.ibb.co/J5fLXC1/install2.jpg" alt="" width="79%">
-                        <li>==>Step 3 </li>
-                        <p class="paragraph" style="color: black;">Laravel install လုပ် ပြီး installation successful
-                            ဖြစ် သွား တယ် အ ခါ အောက် မှာ ပြ ထား တယ် အ တိုင်း ကိုယ် ပေး ထာ သော app name ကို သွား ပါ။</p>
-                        <img src="https://i.ibb.co/51QVJJc/laravel-dir.png" alt="" width="79%">
-                        <li>==>Step 4</li>
-                        <p class="paragraph" style="color: black;">Now! You can run 🔥🔥🔥</p>
-                        <img src="https://i.ibb.co/NpR8vDq/laravel-run.jpg" alt="" width="79%">
-                        <li>==>Step 5</li>
-                        <img src="https://i.ibb.co/421qPSq/laravel-browser.jpg" alt="" width="79%">
+                    <h3>Laravel Bootstrap's directory</h3>
+                    <ul>
+                        <li><b>Bootstrap </b> directory က တော့ bootstrap အတွက်လိုအပ်သော script ကို app.php မှာ ကြို ရေးး ထားး တာပါ။Bootstrap directory မှာ cache (sub-folder) က တော့ web application အသုံး ပြု သော caching အတွက် ပါဝင်ပါ တယ်။</li>
+                      
+                    </ul>
+                    <h3>Laravel's config directory</h3>
+                    <ul>
+                        <li>Config directory က တော့   အောက်ပါscreen shot  ပေး ထား တယ်features တစ်ခုခုသုံး တယ် အခါ configuration လုပ်ပေးး တာ ပါ ။</li>
+                        <img src="https://i.postimg.cc/3rX9zk8V/config-dir.png" alt="" width="79%">
                     </ul>
                 </div>
     </div>
